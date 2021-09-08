@@ -5,6 +5,7 @@ Build an Instagram Clone with React Native, Firebase Firestore, Redux, Expo - Fu
 ⭐️ Course Contents ⭐️
 
 (0:00:00) Introduction
+
 (0:02:28) Setting up React Native Expo
 (0:16:34) Auth System With Firebase and React Native
 (0:56:33) Save Data Using Firebase And Redux
