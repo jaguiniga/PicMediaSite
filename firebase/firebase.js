@@ -6,7 +6,7 @@ import "firebase/storage";
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+const Config = {
     apiKey: "AIzaSyB5k4AYDoYQ0Wxpy-T1y1xxS9a8klUFqh8",
     authDomain: "picmediasite-dev.firebaseapp.com",
     projectId: "picmediasite-dev",
@@ -16,13 +16,12 @@ const firebaseConfig = {
     measurementId: "G-NPJX7BWV40"
   };
 
-export const storage = firebase.storage();
+  // initilaize firebase
+  
+  firebase.initializeApp(Config)
+  
+
+  export const storage = firebase.storage();
 export const timestamp1 = firebase.firestore.FieldValue.serverTimestamp();
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
-
-
-  // initilaize firebase
-  if(firebase.apps.length === 0){
-  firebase.initializeApp(Config)
-  };
